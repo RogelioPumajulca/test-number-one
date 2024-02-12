@@ -1,16 +1,28 @@
 <template>
-  <div>
-    <h1>Neo4j - DataQ1 - Maso</h1>
-    <ul>Neo4j Data: {{ data }}</ul> 
+  <body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h1>Neo4j - DataQ1 - Maso</h1>
+        <ul>Neo4j Data: {{ data }}</ul> 
+        <button class="btn btn-primary">NoHaceNada</button>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <h1>Neo4j - DataQ2- NoFunca</h1>
+          <ul>
+            <li v-for="record in records1" :key="record.id">
+              {{ record.properties.name }}
+            </li>
+            <img src="@/assets/TestBD.png" alt="Example">
+          </ul>
+        <button class="btn btn-primary">TampocoHaceNada</button>
 
-    <h1>Neo4j - DataQ2- EnlaVersh</h1>
-    <ul>
-      <li v-for="record in records1" :key="record.id">
-        {{ record.properties.name }}
-      </li>
-    </ul>
+            
 
+      </div>
+    </div>
   </div>
+  </body>
 </template>
 
 <script>
